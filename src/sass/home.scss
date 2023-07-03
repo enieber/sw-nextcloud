@@ -1,0 +1,20 @@
+@import "./theme.scss";
+
+.button {
+  background: $primary;
+  color: $text-color;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container-image {
+    margin: 10vh;
+  }
+}
