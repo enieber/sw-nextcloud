@@ -4,36 +4,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './App.css'
-import ImageProject from './components/images/Projects';
-import './sass/home.scss'
-
-const Home = () => {
-  return (
-    <section className="container">
-      <h1>Produção Cooperativista</h1>
-      <p>Nessa sessão você poderá acompanhar toda sua produção cooperativista</p>
-      <div className="container-image">
-        <ImageProject />
-      </div>
-      <div>
-      <a
-        className="button"
-        href={Routers.find(item => item.name.includes('production')).path}
-      >Começar</a>
-      </div>
-    </section>
-  )
-}
-
-const Production = (props) => {
-  const { name } = props;
-
-  return (
-    <section>
-      <h2>{`Produção Cooperativista - ${name}`}</h2>
-    </section>
-  )
-}
+import Home from './pages/Home';
+import Production from './pages/Productions';
 
 const Routers = [
   {
@@ -42,7 +14,7 @@ const Routers = [
     name: 'home',
   },
   {
-    path: '/production',
+    path: '/productions',
     element: <Production name="João" />,
     name: 'production'
   }
@@ -51,8 +23,8 @@ const Routers = [
 const router = createBrowserRouter(Routers);
 
 function App() {
-
   return (
+
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>

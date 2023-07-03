@@ -1,0 +1,14 @@
+{
+  "productions": [
+    {
+      "id": "1",
+      "date": "01/2010",
+      "file": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+    },
+    {
+      "id": "2",
+      "date": "02/2010",
+      "file": "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
+    }
+  ]
+}
