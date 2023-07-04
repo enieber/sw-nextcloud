@@ -19,7 +19,6 @@ const Production = (props) => {
         setError(err.message);
         setData([]);
       })
-    fetch()
   }, [])
 
   if (error) {
