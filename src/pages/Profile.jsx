@@ -8,7 +8,7 @@ const Production = () => {
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
-    Api.get("/productions")
+    Api.get("/profile")
       .then(response => {
         setData(response.data)
         setError(null)
@@ -30,21 +30,11 @@ const Production = () => {
 
   return (
     <section className="container">
-      <h2>{`Produção Cooperativista`}</h2>
+      <h2>{`Dados do Perfil`}</h2>
       <div className="productions">
-        {data.map(({ value, date, file, id }) => {
-          return (
-            <div key={id} className="item">
-              <div>
-              <h4>{date}</h4>              
-              </div>
-            <div>{value}</div>
-              <div>
-               <a href={file} target="blank">Downdoad</a>
-              </div>
-            </div>
-          )
-        })}
+        <h3>{data.name}</h3>
+        <span>Matricula: {data.registry_number}</span>
+        <span>Data de registro: {data.registry_date}</span>
       </div>
     </section>
   )

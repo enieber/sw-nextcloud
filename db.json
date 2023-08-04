@@ -3,12 +3,89 @@
     {
       "id": "1",
       "date": "01/2010",
+      "value": "100,00",
       "file": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
     },
     {
       "id": "2",
       "date": "02/2010",
+      "value": "2000",
       "file": "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
     }
-  ]
+  ],
+  "documents": [
+    {
+      "id": "1",
+      "name": "Estatuto",
+      "file": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+    },
+    {
+      "id": "2",
+      "name": "Regimento Interno",
+      "file": "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "1",
+      "date": "10/10/10",
+      "time": "19:00",
+      "place": "Jisti",
+      "type": "GE",
+      "files": [
+        {
+          "name": "Edital de convocação",
+          "link": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+        },
+        {
+          "name": "Boletin de votos",
+          "link": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+        }
+
+      ]
+    },
+    {
+      "id": "3",
+      "date": "10/10/10",
+      "time": "19:00",
+      "place": "Jisti",
+      "type": "GE",
+      "files": [
+        {
+          "name": "Edital de convocação",
+          "link": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+        },
+        {
+          "name": "Boletin de votos",
+          "link": "http://portal.mec.gov.br/arquivos/livro/livro.pdf"
+        }
+
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "title": "Comunicado de iniciação",
+      "content": "Text",
+      "date": "10/10/2001",
+      "time": "10:10",
+      "status": "read"
+    },
+    {
+      "id": "1",
+      "title": "Comunicado de iniciação",
+      "content": "Text",
+      "date": "10/10/2001",
+      "time": "12:00",
+      "status": "unread"
+    }
+  ],
+  "profile": {
+    "admin": true,
+    "name": "Joãozinho da Bicicleta",
+    "registry_number": "044",
+    "registry_date": "10/10/2000",
+    "email": "joaozinho@station.coop"
+  }
 }

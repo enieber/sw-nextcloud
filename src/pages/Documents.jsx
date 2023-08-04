@@ -3,12 +3,13 @@ import Api from '../api/api';
 
 import '../sass/production.scss';
 
-const Production = () => {
+const Documents = (props) => {
+
   const [data, setData] = React.useState([]);
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
-    Api.get("/productions")
+    Api.get("/documents")
       .then(response => {
         setData(response.data)
         setError(null)
@@ -30,15 +31,14 @@ const Production = () => {
 
   return (
     <section className="container">
-      <h2>{`Produção Cooperativista`}</h2>
+      <h2>{`Documentos`}</h2>
       <div className="productions">
-        {data.map(({ value, date, file, id }) => {
+        {data.map(({ name, file, id }) => {
           return (
             <div key={id} className="item">
               <div>
-              <h4>{date}</h4>              
+              <h4>{name}</h4>              
               </div>
-            <div>{value}</div>
               <div>
                <a href={file} target="blank">Downdoad</a>
               </div>
@@ -50,5 +50,5 @@ const Production = () => {
   )
 }
 
-export default Production;
+export default Documents;
 
